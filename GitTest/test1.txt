@@ -1,9 +1,9 @@
 
-тралялял
+тралялял []
 
 hello
-angry
+an!!gry
 world!
-
+!
 And something good
 
