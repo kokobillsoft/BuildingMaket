@@ -7,7 +7,7 @@ function main(){
 }
 
 function printEven (n,k){
-    n += (n%2)*(n%2);
+    n += Math.abs(n%2);
     while (n <= k){
         console.log (n);
         n += 2; 
