@@ -7,7 +7,6 @@ class Revolver extends Gun {
         this.maxAmmo = 6;
         this.reload(this.maxAmmo);
     }
-
 }
 
 function main(){                                //main of programm
