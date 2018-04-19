@@ -1,0 +1,68 @@
+body {
+    background-image: url(pictures/FirstPage.jpg);
+}
+
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .row { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .row { height: 1%; }
+  .row { display: block; }
+  /* close commented backslash hack */
+
+.central {
+   min-height: 1100px;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.inner-header {
+    background: green;
+    height: 50px;
+    opacity: 0.3 ;
+}
+
+.content {
+    width: 80%;
+    float: left;
+}
+
+.inner-content {
+    background: blue;
+    opacity: 0.5;
+}
+
+.sidebar {
+    width: 20%;
+    float: left;
+    opacity: 0.3;
+   
+}
+
+.inner-sidebar {
+    background: rgb(170, 149, 110);
+    padding-left: 10px;
+    margin-left: 10px;
+    border: 5px solid rgb(170, 149, 110);
+    border-radius: 20px;
+    
+}
+
+.footer {
+    margin-top: 10px;
+    float: bottom;
+}
+
+.inner-footer {
+   background: mediumvioletred;
+   height: 100px; 
+   opacity: 0.4;
+}
