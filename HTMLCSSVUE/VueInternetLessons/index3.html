@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Lesson3 </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.25/vue.min.js"></script>
+    <div id="App3">
+        <!--<form action="">
+            <button v-on:click.prevent="onClick">Button</button>
+        </form>-->
+        <input type="text" v-model="message" @keyup.16="onClick">
+    </div>
+    <script>
+        new Vue({
+            el: "#App3",
+            data: {
+                message: ''
+            },
+            methods: {
+                onClick: function(){
+                    console.log(this.message)
+                }
+            } 
+        })
+    </script>
+
+
+</body>
+</html>
