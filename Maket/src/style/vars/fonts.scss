@@ -1,0 +1,9 @@
+@mixin font-default() {
+    font-family: arial, sans-serif;
+    line-height: 1.5em;
+}
+
+@mixin font-code() {
+    font-family: monospace;
+    line-height: 1.1em;
+}

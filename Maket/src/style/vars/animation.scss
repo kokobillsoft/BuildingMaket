@@ -1,0 +1,3 @@
+@mixin animate($scope: all, $tf: .2s, $mode: ease-out) {
+    transition: $scope $tf $mode;
+}

@@ -1,0 +1,15 @@
+@mixin button() {
+    padding: 10px;
+    background-color: $color-primary;
+    color: white;
+    font-size: 16px;
+    line-height: 1em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    @include animate;
+
+    &:hover {
+        background-color: $color-secondary;
+    }
+}

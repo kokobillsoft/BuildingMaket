@@ -1,0 +1,62 @@
+$header-size: 40px;
+$header-font: 20px;
+
+$content-padding: 20px;
+
+body {
+    background-color: $grey-light-2;
+}
+
+.default-template {
+    padding-top: $header-size;
+    color: $grey-2;
+    @include font-default;
+
+    .btn {
+        @include button;
+    }
+
+    .header {
+        position: fixed;
+        top: 0; right: 0; left: 0;
+        height: $header-size;
+        background-color: white;
+        @include shadow-1;
+
+        > * {
+            float: left;
+        }
+
+        .btn {
+            min-width: $header-size;
+            height: $header-size;
+            font-size: $header-font;
+        }
+
+        .title {
+            padding: ($header-size - $header-font) / 2;
+            font-size: $header-font;
+            line-height: 1em;
+            font-weight: bold;
+
+            & + .title {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .main-content {
+        padding: $content-padding;
+        font-size: 16px;
+
+        h1, h2, h3 {
+            font-size: 22px;
+            border-bottom: 1px solid $grey-light-4;
+        }
+
+        p {
+            margin: 1em 0;
+            text-indent: 2em;
+        }
+    }
+}
